@@ -1,0 +1,31 @@
+{
+    "name": "learnGTT",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon --exec ts-node ./src/index.ts",
+        "migrate:create": "yarn typeorm migration:create",
+        "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+        "migrate:run": "yarn typeorm migration:run",
+        "migrate:gen": "yarn typeorm migration:generate"
+    },
+    "dependencies": {
+        "apollo-server-express": "^3.3.0",
+        "express": "^4.17.1",
+        "graphql": "^15.6.1",
+        "pg": "^8.7.1",
+        "reflect-metadata": "^0.1.13",
+        "type-graphql": "^1.1.1",
+        "typeorm": "^0.2.38",
+        "typeorm-naming-strategies": "^2.0.0",
+        "typescript-graphql": "^0.0.9"
+    },
+    "devDependencies": {
+        "@types/graphql": "^14.5.0",
+        "@types/node": "^16.10.3",
+        "nodemon": "^2.0.13",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.4.3"
+    }
+}
