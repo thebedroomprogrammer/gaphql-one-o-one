@@ -1,0 +1,3 @@
+mutation DeleteTodo($id: Float!) {
+    deleteTodo(id: $id)
+}
